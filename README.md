@@ -121,7 +121,7 @@ JWT_SECRET=<tu_secreto_jwt>
 
     ### Cursos
 - **Crear un Curso**
-  - **URL:** `/educCenterSystem/v1/user/updateUser/:userId`
+  - **URL:** `/educCenterSystem/v1/user/updateUser/:uid`
   - **Método:** `POST`
   - **Cuerpo:**
     ```json
