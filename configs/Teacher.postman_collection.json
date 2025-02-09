@@ -1,0 +1,251 @@
+{
+	"info": {
+		"_postman_id": "d403274a-7163-4846-9ce2-36acabb61928",
+		"name": "Teacher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37667709"
+	},
+	"item": [
+		{
+			"name": "Register Teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Jane\",\r\n  \"surname\": \"Smith\",\r\n  \"username\": \"Joe_doe\",\r\n  \"email\": \"jose@example.com\",\r\n  \"password\": \"Th1sQr3N0t4p4$$\",\r\n  \"role\": \"TEACHER_ROLE\",\r\n  \"department\": \"Physics\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/educCenterSystem/v1/auth/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"educCenterSystem",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Teacher",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"jane_smith\",\r\n    \"password\": \"Th1s@r3N0t4P4$$$\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/educCenterSystem/v1/auth/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"educCenterSystem",
+						"v1",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById Teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/educCenterSystem/v1/user/findUser/67a81437c424eaa9b443d7be",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"educCenterSystem",
+						"v1",
+						"user",
+						"findUser",
+						"67a81437c424eaa9b443d7be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Teachers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/educCenterSystem/v1/teacher/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"educCenterSystem",
+						"v1",
+						"teacher",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Teacher",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Juanes\",\r\n  \"surname\": \"Perez\",\r\n  \"username\": \"juanes-perez\",\r\n  \"email\": \"juanes@example.com\",\r\n  \"role\": \"TEACHER_ROLE\",\r\n  \"department\": \"English\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/educCenterSystem/v1/user/updateUser/67a81b5bafcd980f53f8ca77",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"educCenterSystem",
+						"v1",
+						"user",
+						"updateUser",
+						"67a81b5bafcd980f53f8ca77"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Password teaccher",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"newPassword\": \"Th1s@r3N0t4P4$$$\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/educCenterSystem/v1/user/updatePassword/67a81437c424eaa9b443d7be",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"educCenterSystem",
+						"v1",
+						"user",
+						"updatePassword",
+						"67a81437c424eaa9b443d7be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Teacher",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/educCenterSystem/v1/user/deleteUser/67a81437c424eaa9b443d7be",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"educCenterSystem",
+						"v1",
+						"user",
+						"deleteUser",
+						"67a81437c424eaa9b443d7be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Courses Teacher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3000/educCenterSystem/v1/teacher/findCourses/67a90acb5502a71fee127cc6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"educCenterSystem",
+						"v1",
+						"teacher",
+						"findCourses",
+						"67a90acb5502a71fee127cc6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
