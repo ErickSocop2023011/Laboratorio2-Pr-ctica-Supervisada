@@ -5,14 +5,6 @@ Esta API está diseñada para gestionar a los alumnos y a los profesores con sus
 Cree un archivo `.env` en el directorio raíz y agregue las siguientes variables:
 
 ```
-MONGO_URI=<tu_cadena_de_conexión_mongodb>
-PORT=<tu_puerto_del_servidor>
-JWT_SECRET=<tu_secreto_jwt>
-```
-
-Cree un archivo `.env` en el directorio raíz y agregue las siguientes variables:
-
-```
 URI_MONGO=<tu_cadena_de_conexión_mongodb>
 PORT=<tu_puerto_del_servidor>
 SECRETORPRIVATEKEY=<tu_secreto_jwt>
